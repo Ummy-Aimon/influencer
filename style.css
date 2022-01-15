@@ -1,0 +1,294 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,700&family=Poppins&family=Roboto:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,700&family=Poppins&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* navbar part */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding:0 30px;
+}
+.menu-link{
+    display:flex;
+    margin: auto;
+    
+}
+li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+}
+li a{
+    margin: 10px;
+    display:inline-block;
+    
+    
+}
+li a:hover{
+    color:tomato;
+}
+.menu-nav{
+
+    display: flex;
+    padding:1rem 0;
+     margin: 0 auto;
+    width:80%;
+    
+}
+.header-text{
+    font-size:25px;
+    margin-top: 50px; 
+    
+    
+
+}
+/* bannar part */
+.bannar{
+    margin-top: 140px;
+    margin-left: 10%;
+    display:flex;
+}
+.bannar-left{
+    width: 50%;
+}
+.bannar-right{
+    width: 50%;
+}
+.bannar-img{
+    border-left-color: aliceblue;
+    animation-name: img;
+  animation-duration: 8s;
+
+}
+@keyframes img {
+    from {  transform: rotate(20deg);}
+    to {}
+  }
+.bannar-text{
+    font-size: 45px;
+    /* color:lightcoral; */
+}
+.bannar-info{
+    text-align: justify;
+    font-size: 15px;
+    color:black;
+    
+}
+.primary-btn{
+    outline: 0;
+    padding: 15px 20px;
+    background-color: rgb(230, 114, 114);
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    border: 2px solid brown; 
+    top:0;
+}
+.primary-btn:active{
+        top: 5px;
+        box-shadow: 0 2px 0 rgb(230, 114, 114);;
+    
+}
+/* main */
+.main-text .main-title{
+    font-size:25px;
+    margin-bottom:50px;
+    text-transform: uppercase;
+    display: inline-block;
+    border-bottom: 2px solid lightcoral;
+}
+ .main-text{
+    text-align:center;
+}
+.highlight{
+    color:lightcoral;
+}
+.main-card{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    justify-content:center;
+    gap:30px;
+    
+}
+.main-feature{
+        width: 300px;
+        padding: 30px;
+        box-shadow: 0 30px 35px rgba(0,0,0,.2);
+    
+}
+h3{
+    font-size:25px;
+}
+.dollar-info{
+    font-size: 20px;
+    color:black
+}
+
+.filled{
+    color: goldenrod;
+    font-size: 12px;
+}
+.rate{
+    color:black;
+    font-weight: 600;
+    margin: 5px;
+    font-size: 15px;
+}
+p{
+    font-size:15px;
+    color: lightslategray;
+    font-weight: 600;
+}
+.btn{
+    
+    padding: 15px 20px;
+    color: red;
+    font-size: 15px;
+    text-transform: uppercase;
+    float: right;
+    cursor: pointer;
+    top:0;
+}
+/* contact-part */
+.contact-title{
+    font-size:25px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    display: inline-block;
+    border-bottom: 2px solid lightcoral;
+}
+
+.contact-text{
+    text-align: center;
+}
+.contact-info{
+    display: flex;
+}
+.contact-left{
+    width:50%;
+}
+.contact-right{
+ width:50%;
+}
+
+.contact-right form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-field{
+    width: 80%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 18px;
+    outline: 0;
+    border: 1px solid lightcoral;
+}
+/* footer */
+footer{
+    background-color: navajowhite;
+    text-align: center;
+    
+    
+}
+.footer-heading{
+    font-family: 'Roboto', sans-serif;
+    color: lightslategray;
+    font-weight: 600;
+    
+
+}
+.footer{
+    font-size: 10pxpx;
+    color: lightslategray;
+    font-weight: 600;
+    
+}
+.footer-icon{
+    display:flex;
+    justify-content:center;
+    padding: 10px;
+    
+    
+}
+.footer-icon i{
+    color:black;
+    font-size:18px;
+    margin: 5px;
+    
+}
+
+/* media query */
+/* ...........Responsive................... */
+/*............ For Mobile and tablet..................... */
+
+@media screen and (max-width:788px) {
+    .container{
+        width:100%;
+    }
+    .bannar, .bannar-right, .bannar-left{
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+
+    .main-title{
+        margin-top:50px;
+        
+    }
+    .main-card{
+        grid-template-columns: repeat(1,1fr);
+        text-align: center;
+        flex-direction: column;
+    }
+    .header-text{
+        font-size:18px;
+         color:lightcoral;
+         
+         
+    }
+     .bannar-text{
+         font-size:35px;
+         margin-bottom: 20px;
+        
+    }
+    .bannar-right .bannar-img{
+        max-width: 350px;
+       
+    }
+    .btn{
+        margin-right: 10%;
+    }
+    .contact-info{
+        grid-template-columns:1fr;
+        flex-direction: column;
+        text-align: center;
+    
+    }
+    .contact-right{
+        width: 100%;
+    }
+    footer{
+        display:block;
+        margin-top: 15px;
+        display: block;
+        
+        
+    }
+    
+    
+}
